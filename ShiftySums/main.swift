@@ -18,16 +18,44 @@ print("===========")
 // Get the number to be shifted
 let n = Int(readLine()!)!
 
-// How many times should we shift?
-let k = 3
+//How many times should we shift?
+let k = Int(readLine()!)!
 
-// PROCESS
 
-// Shift the given number "k" number of times
-var output = n
-output += n * 10
-output += n * 10 * 10
-output += n * 10 * 10 * 10
+//put this logic in a function
+func shift(n: Int, k: Int) -> Int {
+    
+    //// PROCESS
+//    let n = 12
+//    let k = 3
+    // Shift the given number "k" number of times
+    var output = n
+    if k == 0 {
+        return n
+    } else {
+        for i in 1...k {
+            print("i is \(i)")
+            var toAdd = n
+            // multiply by 10 "i" times
+            for _ in 1...i {
+                toAdd *= 10
+            }
+            output += toAdd
+        }
+        //output
+        
+        //output += n * 10
+        //output += n * 10 * 10
+        //output += n * 10 * 10 * 10
+        
+        //// OUTPUT
+        return(output)
+    }
+    
+    //Shifty(n: 12, k: 3)
+}
 
-// OUTPUT
-print(output)
+shift(n: 12, k: 3)
+
+
+// need let and print statements 

@@ -43,24 +43,8 @@ print(" ", terminator: "")
 }
 }
 
-for _ in 1...t {
-    print ("*", terminator: "")
 
-for _ in 1...s {
-//print spaces
-print(" ", terminator: "")
-}
-}
-
-for _ in 1...t {
-    print ("*", terminator: "")
-
-for _ in 1...s {
-//print spaces
-print(" ", terminator: "")
-}
-}
-
+dd
 //// Produce top of trident according to length given
 //for _ in 1...t {
 //    // Print the tines

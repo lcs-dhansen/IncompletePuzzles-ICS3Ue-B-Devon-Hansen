@@ -16,9 +16,11 @@ print("===========")
 // INPUT
 
 // Get the number to be shifted
+print("Base")
 let n = Int(readLine()!)!
 
 //How many times should we shift?
+print("Shift")
 let k = Int(readLine()!)!
 
 
@@ -55,7 +57,10 @@ func shift(n: Int, k: Int) -> Int {
     //Shifty(n: 12, k: 3)
 }
 
-shift(n: 12, k: 3)
+//shift(n: 12, k: 3)
+
+let answer = shift(n: 1, k: 2)
+print(answer)
 
 
 // need let and print statements 

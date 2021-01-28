@@ -66,7 +66,8 @@ var str = "Hello, playground"
 
 
 func translate(phrase shortForm: String) -> String{
-                switch shortForm {
+              
+    switch shortForm {
                 case "CU":
                     return ("see you")
                 case ":-)":
@@ -97,9 +98,11 @@ func translate(phrase shortForm: String) -> String{
         print(shortForm)
 }
 // OUTPUT
-let output = translate(phrase: phrase)
-print(output)
-
+var translation = ""
+//repeat {
+//
+//    print("enter phrase", terminator: "")
+//}
 // Output
 // Here, we are at the "call site"
 // This si where a function is "called" or invoked.

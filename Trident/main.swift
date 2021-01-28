@@ -25,6 +25,17 @@ print("Enter tine spacing:")
 print("   ", terminator: "")
 let s = Int(readLine()!)!
 
+// Get haft width
+print("Enter haft width:")
+print("   ", terminator: "")
+let h = Int(readLine()!)!
+
+
+// Get handle length
+print("Enter handle length:")
+print("   ", terminator: "")
+let hl = Int(readLine()!)!
+
 // OUTPUT
 
 //draw all the tines
@@ -42,27 +53,22 @@ for _ in 1...t {
     }
     
     //row complete go to next line
-    print("")
+    // \n character sequence
+    //pushes content down to the next line
+    print("\n", terminator: "")
+}
+
+for _ in 1...h {
+    print ("*", terminator: "")
+}
+print("\n", terminator: "")
+
+
+for _ in 1...hl {
+print("   *   ")
 }
 
 
-
-//// Produce top of trident according to length given
-//for _ in 1...t {
-//    // Print the tines
-//    for _ in 1...3 {
-//
-//        // Print part of a tine
-//        print("*", terminator: "")
-//
-//        // Print space between tines
-//        for _ in 1...s {
-//            print(" ", terminator: "")
-//        }
-//
-//    }
-//    // Go to next line of output
-//    print("")
+//for _ in 1...hw {
+//    print ("*")
 //}
-//
-

@@ -25,10 +25,10 @@ print("Enter tine spacing:")
 print("   ", terminator: "")
 let s = Int(readLine()!)!
 
-// Get haft width
-print("Enter haft width:")
-print("   ", terminator: "")
-let h = Int(readLine()!)!
+//// Get haft width
+//print("Enter haft width:")
+//print("   ", terminator: "")
+//let h = Int(readLine()!)!
 
 
 // Get handle length
@@ -58,7 +58,7 @@ for _ in 1...t {
     print("\n", terminator: "")
 }
 
-for _ in 1...h {
+for _ in 1...3 + s + s {
     print ("*", terminator: "")
 }
 print("\n", terminator: "")

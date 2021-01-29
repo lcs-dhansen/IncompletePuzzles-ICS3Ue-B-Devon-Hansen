@@ -36,39 +36,60 @@ print("Enter handle length:")
 print("   ", terminator: "")
 let hl = Int(readLine()!)!
 
-// OUTPUT
 
-//draw all the tines
+//Process
+
+func drawTrident(tinelength t: Int, tineSpacing s: Int, handleLength hl: Int) -> String {
+
+// OUTPUT
+var output = "" //empty string to start
+
+    
+    //draw all the tines
 
 for _ in 1...t {
     
     //draw the first line of all three tines with space between.
     for _ in 1...t {
-        print ("*", terminator: "")
+        output += "*"
+       // print ("*", terminator: "")
 
     for _ in 1...s {
     //print spaces
-    print(" ", terminator: "")
+        output += "*"
+    //print(" ", terminator: "")
     }
     }
     
     //row complete go to next line
     // \n character sequence
     //pushes content down to the next line
-    print("\n", terminator: "")
+    output += "\n"
+    //print("\n", terminator: "")
 }
 
 for _ in 1...3 + s + s {
-    print ("*", terminator: "")
+    output += "*"
+    //print ("*", terminator: "")
 }
-print("\n", terminator: "")
+    output += "*"
+//print("\n", terminator: "")
 
 
-for _ in 1...hl {
-print("   *   ")
+    for _ in 1...hl {
+        output += "   *   "
+}
+    return output
 }
 
+//output
+//call function
+let programOutput = drawTrident(tinelength: t, tineSpacing: s, handleLength: hl)
+//actually show ouptut
+print(programOutput)
 
 //for _ in 1...hw {
 //    print ("*")
 //}
+
+

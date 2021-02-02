@@ -46,7 +46,7 @@ func drawTrident(tinelength t: Int, tineSpacing s: Int, handleLength hl: Int) ->
     for _ in 1...t {
         
         //draw the first line of all three tines with space between.
-        for _ in 1...t {
+        for _ in 1...3 {
             output += "*"
             // print ("*", terminator: "")
             

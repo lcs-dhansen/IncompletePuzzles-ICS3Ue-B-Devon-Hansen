@@ -22,16 +22,94 @@ print("=============")
 // INPUT
 
 // Get daytime minutes
-print("Number of daytime minutes?")
-let day = Int(readLine()!)!
+
+//let day = Int.collectInput(withPrompt: "Numebr of daytime minutes?", minimun: 0, maximum: nil)
+var day = 0
+while true {
+
+    // Prompt the user
+    print("Number of daytime minutes? ")
+    
+    // Collect input
+    guard let givenInput = readLine() else {
+        continue
+    }
+
+    // Convert to an integer
+    guard let givenInteger = Int(givenInput) else {
+        continue
+    }
+
+    // Check that the value is positive
+    guard givenInteger >= 0 else {
+        continue
+    }
+    
+    // Assign the given integer to our "day" variable
+    day = givenInteger
+    
+    // Stop the loop
+    break
+}
+
 
 // Get evening minutes
-print("Number of evening minutes?")
-let evening = Int(readLine()!)!
+var evening = 0
+while true {
+
+    // Prompt the user
+    print("Number of evening minutes? ")
+    
+    // Collect input
+    guard let givenInput = readLine() else {
+        continue
+    }
+
+    // Convert to an integer
+    guard let givenInteger = Int(givenInput) else {
+        continue
+    }
+    
+    // Check that the value is positive (zero or above)
+    guard givenInteger >= 0 else {
+        continue
+    }
+    
+    // Assign the given integer to our "evening" variable
+    evening = givenInteger
+    
+    // Stop the loop
+    break
+}
 
 // Get weekend minutes
-print("Number of weekend minutes?")
-let weekend = Int(readLine()!)!
+var weekend = 0
+while true {
+
+    // Prompt the user
+    print("Number of weekend minutes? ")
+    
+    // Collect input
+    guard let givenInput = readLine() else {
+        continue
+    }
+
+    // Convert to an integer
+    guard let givenInteger = Int(givenInput) else {
+        continue
+    }
+
+    // Check that the value is positive
+    guard givenInteger >= 0 else {
+        continue
+    }
+    
+    // Assign the given integer to our "day" variable
+    day = givenInteger
+    
+    // Stop the loop
+    break
+}
 
 // INPUT
 
@@ -103,6 +181,5 @@ let output = compareCosts(day: day,
                           evening: evening,
                           weekend: weekend)
 print(output)
-
 
 

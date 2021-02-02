@@ -15,13 +15,12 @@ print("===========")
 
 // INPUT
 
+
 // Get the number to be shifted
-print("Base")
-let n = Int(readLine()!)!
+var n = Int.collectInput(withPrompt: "Base", minimum: 0, maximum: nil)
 
 //How many times should we shift?
-print("Shift")
-let k = Int(readLine()!)!
+var k = Int.collectInput(withPrompt: "Shift", minimum: 0, maximum: nil)
 
 
 //put this logic in a function

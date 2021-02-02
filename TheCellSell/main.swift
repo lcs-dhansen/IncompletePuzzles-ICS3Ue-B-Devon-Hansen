@@ -23,93 +23,15 @@ print("=============")
 
 // Get daytime minutes
 
-//let day = Int.collectInput(withPrompt: "Numebr of daytime minutes?", minimun: 0, maximum: nil)
-var day = 0
-while true {
-
-    // Prompt the user
-    print("Number of daytime minutes? ")
-    
-    // Collect input
-    guard let givenInput = readLine() else {
-        continue
-    }
-
-    // Convert to an integer
-    guard let givenInteger = Int(givenInput) else {
-        continue
-    }
-
-    // Check that the value is positive
-    guard givenInteger >= 0 else {
-        continue
-    }
-    
-    // Assign the given integer to our "day" variable
-    day = givenInteger
-    
-    // Stop the loop
-    break
-}
+var day = Int.collectInput(withPrompt: "Number of daytime minutes?", minimum: 0, maximum: nil)
 
 
 // Get evening minutes
-var evening = 0
-while true {
+var evening = Int.collectInput(withPrompt: "Number of evening minutes?", minimum: 0, maximum: nil)
 
-    // Prompt the user
-    print("Number of evening minutes? ")
-    
-    // Collect input
-    guard let givenInput = readLine() else {
-        continue
-    }
-
-    // Convert to an integer
-    guard let givenInteger = Int(givenInput) else {
-        continue
-    }
-    
-    // Check that the value is positive (zero or above)
-    guard givenInteger >= 0 else {
-        continue
-    }
-    
-    // Assign the given integer to our "evening" variable
-    evening = givenInteger
-    
-    // Stop the loop
-    break
-}
 
 // Get weekend minutes
-var weekend = 0
-while true {
-
-    // Prompt the user
-    print("Number of weekend minutes? ")
-    
-    // Collect input
-    guard let givenInput = readLine() else {
-        continue
-    }
-
-    // Convert to an integer
-    guard let givenInteger = Int(givenInput) else {
-        continue
-    }
-
-    // Check that the value is positive
-    guard givenInteger >= 0 else {
-        continue
-    }
-    
-    // Assign the given integer to our "day" variable
-    day = givenInteger
-    
-    // Stop the loop
-    break
-}
+var weekend = Int.collectInput(withPrompt: "Number of weekend minutes?", minimum: 0, maximum: nil)
 
 // INPUT
 
@@ -181,5 +103,3 @@ let output = compareCosts(day: day,
                           evening: evening,
                           weekend: weekend)
 print(output)
-
-

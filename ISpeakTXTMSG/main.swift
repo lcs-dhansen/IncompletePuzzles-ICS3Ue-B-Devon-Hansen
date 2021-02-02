@@ -95,7 +95,7 @@ func translate(phrase shortForm: String) -> String{
                 default:
                     return shortForm
     }
-        print(shortForm)
+        print("shortForm")
 }
 // OUTPUT
 var translation = ""
